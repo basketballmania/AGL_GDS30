@@ -1,0 +1,105 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{version}/Codes/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dev-code-ota.tigergds.com",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/Codes/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/GolfClubs/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dev-golfclub-ota.tigergds.com",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/GolfClubs/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/GolfClub/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dev-golfclub-ota.tigergds.com",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/GolfClub/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/Reservation/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dev-reservation-ota.tigergds.com",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/Reservation/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/TeeTime/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dev-teetime-ota.tigergds.com",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/TeeTime/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/TeeTimes/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "dev-teetime-ota.tigergds.com",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/TeeTimes/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/StaticPackage/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "staticpackage-ota.tigergds.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/StaticPackage/{everything}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    }
+
+  ]
+}

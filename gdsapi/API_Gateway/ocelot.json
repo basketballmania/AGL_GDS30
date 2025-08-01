@@ -1,0 +1,38 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{version}/Sample/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SampleApi.Host}",
+          "Port": "{SampleApi.Port}"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/Sample/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/{version}/SecondSample/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SecondSampleApi.Host}",
+          "Port": "{SecondSampleApi.Port}"
+        }
+      ],
+      "UpstreamPathTemplate": "/{version}/SecondSample/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+  ]
+}
